@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
     <script src="../js/bqjs.js"></script>
     <meta charset="UTF-8">
     <title>Bootstrap project</title>
@@ -15,8 +15,8 @@
 <body>
     <div class="container-fluid">
         <header>
-            <div class="row topbar">
-                <div class="col-sm-3 logo red">
+            <div class="row topbar fixed-top">
+                <div class="col-sm-3 logo">
                     <a href="index.html">
                         <img src="../img/logo.png">
                         <div class="logotext">
@@ -24,7 +24,7 @@
                         </div>
                     </a>    
                 </div>
-                <div class="col-sm-9 blue bqnavbarcontainer">
+                <div class="col-sm-9 bqnavbarcontainer">
                     <nav class="navbar navbar-toggleable-md bg-faded bqnavbar">
                       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -57,9 +57,40 @@
                 </div>
             </div>
         </header>
-        
         <footer>
         </footer>
     </div>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="fill d-block img-fluid" style="background-image:url('../img/image3.jpg');"></div>
+              <div class="carousel-caption trapezoid">
+                    <h2>Caption 1</h2>
+              </div>        
+            </div>  
+            <div class="carousel-item">
+<!--              <img class="d-block img-fluid" src="../img/image4.jpg" alt="First slide">-->
+              <div class="fill d-block img-fluid" style="background-image:url('../img/image4.jpg');"></div>    
+              <div class="carousel-caption trapezoid">
+                    <h2>Caption 2</h2>
+              </div>    
+            </div>
+            <div class="carousel-item">
+<!--              <img class="d-block img-fluid" src="../img/image5.jpg" alt="First slide">-->
+              <div class="fill d-block img-fluid" style="background-image:url('../img/image5.jpg');"></div>    
+              <div class="carousel-caption trapezoid">
+                    <h2>Caption 3</h2>
+              </div>    
+            </div>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>
